@@ -1,9 +1,16 @@
+%#############################################
+%##                                         ##
+%##   Professional CV of Drasko DRASKOVIC   ##
+%##                                         ##
+%#############################################
+
 \documentclass[a4paper, oneside, final]{scrartcl}
 \usepackage{soul}
 \usepackage{scrpage2}
 \usepackage{titlesec}
 \usepackage{amsfonts,graphicx}
-\usepackage[pdfstartview=FitH,urlcolor=blue,colorlinks=true,bookmarks=true]{hyperref}
+%\usepackage[pdfstartview=FitH,urlcolor=blue,colorlinks=true,bookmarks=true]{hyperref}
+\usepackage[pdfstartview=FitH,pdfcreator={Drasko DRASKOVIC}]{hyperref}
 \usepackage{marvosym}
 \usepackage{tabularx,colortbl}
 \pagestyle{plain}   % do page numbering ('empty' turns off)
@@ -24,7 +31,9 @@
 
 \titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
 
- 
+%%%%%%%%%%%%%%%%%%
+% HEADER
+%%%%%%%%%%%%%%%%%% 
 \begin{center}
 
    \textsc{\huge{\so{Drasko DRASKOVIC}}}
@@ -34,10 +43,6 @@
    \so{{\Large\Letter} drasko.draskovic@gmail.com \ {\Large\Telefon} +33 (0)6 73487750}
 
 \end{center}
-
- 
-
-
 
 %%%%%%%%%%%%%%%%
 % OBJECTIVE
@@ -54,9 +59,7 @@
 \section{EXPERIENCE}
 
 %%% Sequans Communications %%%
-
 %\renewcommand{\arraystretch}{1.1}
-
 \newcommand{\gray}{\rowcolor[gray]{.90}}
    %\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
    \begin{tabularx}{1.0\linewidth}{X}
@@ -157,9 +160,7 @@
 \end{itemize}
 
 
-
 %%% SPiDCOM %%%
-
 \bigskip
 
    \begin{tabularx}{1.0\linewidth}{X}
@@ -206,9 +207,7 @@
 \end{itemize}
 
 
-
 %%% Texas Instruments  %%%
-
 \bigskip
 
    \begin{tabularx}{1.0\linewidth}{X}
@@ -263,7 +262,6 @@
             GSM Voice test process for RACAL AIME 6103.
    \item Developed ANITE/Agilent SW applications (in C) for testing 2G/UMA (GAN) handovers
 \end{itemize}
-
 
 
 %%%% FNX Solutions %%%
@@ -321,6 +319,35 @@
 \end{itemize}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%
+% OPEN SOURCE PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%
+\section{OPEN SOURCE PROJECTS}
+GNU and FOSS evangelist, implicated in many open source projects in domains of
+development, documentation or support via mailing lists.
+
+\begin{itemize}
+   \item \textbf{OpenOCD} (\url{http://openocd.sourceforge.net/})
+      \begin{itemize}
+         \item Added support for ARM946E-S architecture
+         \item Corrected MIPS32 code and added microcodes for cache handling
+         \item Documented MIPS32 implementation and functionalities
+      \end{itemize}
+   \item \textbf{WeIO} (\url{http://www.weio-cockpit.org})
+      \begin{itemize}
+         \item Project co-author and designer 
+         \item Electronic components selection and ordering and soldering of
+               the HW development boards using PCB re-flow technique
+         \item Compiled/ported ARM CMSIS low-level libraries and drivers to NXP
+                  LPC1768 (ARM CORTEX-M3) architecture
+         \item Ported NuttX RTOS to WeIO platform
+      \end{itemize}
+   \item \textbf{Codezero OpenRISC Port} (\url{http://opencores.org/project,c0or1k})
+      \begin{itemize}
+         \item Main maintainer of the project 
+         \item Ported C0 code OpenRISC 1000 architecture
+      \end{itemize}
+\end{itemize}
 
 
 %%%%%%%%%%%%%%
@@ -337,7 +364,8 @@
          Telecommunications, School of Electrical Engeneering, Belgrade, Serbia
 
 \medskip
-Student projects:
+   
+   Student projects:
 
 \begin{itemize}
    \item RT application for railroad taffic signaling 
@@ -350,7 +378,6 @@ Student projects:
 \end{itemize}
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%
 % PERSONAL INTERESTS
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -359,7 +386,8 @@ Student projects:
    \item Music playing (guitar) and sound and video production using GNU
             tools
    \item Contemporary and fine art photography, analogue and digital 
-   \item Karate (karateka and official member of France Shotokan Federation)
+   \item Karate (karateka and official member of
+         \href{http://www.ffkarate.fr/}{Franch Karate Federation})
    \item Film, literature and philosophy
 \end{itemize}
 
