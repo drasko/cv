@@ -1,7 +1,20 @@
 #############################################
 ##                                         ##
-##   Professional CV of Drasko DRASKOVIC   ##
+##    Professional CV and Cover Letter     ##
+##            Drasko DRASKOVIC             ##
 ##                                         ##
 ##          (written in LaTeX)             ##
 ##                                         ##
 #############################################
+
+CV compilation :
+> acroread cv.pdf
+
+Cover Letter compilation :
+> xelatex letter.tex
+
+
+---
+Based on the tutorial from :
+http://stefano.italians.nl/archives/category/latex
+

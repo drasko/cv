@@ -1,0 +1,50 @@
+\ProvidesFile{standard.lco}[%
+  2002/07/09 v0.9a LaTeX2e unsupported letter-class-option]
+ 
+\usepackage{fontspec}
+\usepackage{marvosym}
+ 
+% ==============================================
+%  PERSONAL DATA
+% ==============================================
+\setkomavar{fromname}{Iulius Caesar}
+\setkomavar{fromaddress}{Van Eeghenlaan 69\\1691QT Amsterdam\\Nederland}
+\setkomavar{fromphone}{+31 (0)22 7394203}
+\setkomavar{fromemail}{iulius@gmail.com}
+\setkomavar{fromfax}{+31 (0)71 5144543}
+\setkomavar{fromurl}{http://stefano.italians.nl}
+\setkomavar{frombank}{Postbank 9307157}
+\setkomavar{place}{Amsterdam}
+\setkomavar{signature}{Iulius Caesar}
+ 
+% ==============================================
+%  FORMATTING STUFF
+% ==============================================
+ 
+% === font settings
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont {Adobe Garamond Pro}
+%\setsansfont {Gill Sans Std}
+ 
+%set the font size and leading
+\renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
+ 
+% === header settings
+\firsthead{
+   \centering
+         {\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
+         \fontsize{21}{21}\selectfont\scshape Programmer and Architect at Initech
+}
+ 
+% === footer settings
+\firstfoot{
+  \centering
+  \addfontfeature{LetterSpace=20.0}\scshape
+  {
+      \renewcommand{\\}{\ {\large\textperiodcentered}\ }
+      \usekomavar{fromaddress}
+  }\\
+  {\Large\Letter} \usekomavar{fromemail} \ {\Large\Telefon} \usekomavar{fromphone}
+}
+ 
+\endinput
