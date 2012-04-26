@@ -19,6 +19,11 @@
 
 \usepackage{bold-extra}
 
+\usepackage{amssymb}
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+
+
+
 %\usepackage[T1]{fontenc}
 
 
@@ -52,67 +57,6 @@
    ambitious and career-conscious person, where acquired skills and education
    will be utilized toward continued growth and advancement.
 
-
-%%%%%%%%%%%%%%%%%%%%%%%
-% OPEN SOURCE PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%
-\section{OPEN SOURCE PROJECTS}
-GNU and FOSS evangelist, implicated in many open source projects in domains of
-development, documentation and support via mailing lists.
-
-\begin{itemize}
-   %% OpenOCD %%
-   \item \textbf{OpenOCD} (\url{http://openocd.sourceforge.net/}) \\
-      \textit{The Open On-Chip Debugger (OpenOCD) aims to provide debugging,
-         in-system programming and boundary-scan testing for embedded target
-            devices.}
-      \begin{itemize}
-         \item Added support for ARM946E-S architecture
-         \item Corrected MIPS32 code and added microcodes for cache handling
-         \item Documented MIPS32 implementation and functionalities
-      \end{itemize}
-   %% WeIO %%
-   \item \textbf{WeIO} (\url{http://www.weio-cockpit.org}) \\
-      \textit{Project aims at bringing rapid protoyping and "internet of things"
-         platform under FOSS licence for both HW and SW. Homebrew "from the scratch"
-         implementation is employed and ecouraged.}
-      \begin{itemize}
-         \item Project co-author and designer
-         \item Communication and co-operation with MicropendousX Open Hardware
-               project on PCB design.
-         \item Electronic components selection and ordering and soldering of
-               the HW development boards using PCB re-flow technique
-         \item Enabled OpenOCD low-level JTAG debugging. Wrote TCL
-               configuration scripts and test for HW sanity checking.
-         \item Copiled and prepared toolchain based on GCC and Binutils and
-               wrote build systetem as a combination of Bash shell scripts and set of Make files
-         \item Compiled/ported ARM CMSIS low-level libraries and drivers to NXP
-                  LPC1768 (ARM CORTEX-M3) architecture
-         \item Ported NuttX RTOS to WeIO platform
-      \end{itemize}
-   %% c0or1k %%
-   \item \textbf{Codezero OpenRISC Port} (\url{http://opencores.org/project,c0or1k}) \\
-         \textit{Codezero is a new L4 microkernel that has been written from scratch,
-            following the latest development and research principles on
-               microkernel design. Project \textbf{c0or1k} aims at porting this
-               microkernel to general purpose open source RISC CPU
-               architectures.}
-      \begin{itemize}
-         \item Main maintainer of the project 
-         \item Modified SCons and CML2 configuration and build system and implemented set of
-               Python develpoment utilities
-         \item Ported C0 code OpenRISC 1000 architecture
-   \end{itemize}
-   %% hipstery %%
-   \item \textbf{Hipstery} (\url{https://github.com/drasko/hipstery}) \\
-      \textit{Perl script to automatically generate Lo-Fi web photo-gallery. It
-         produces W3C compliant CSS editable HTML code based on a simple user configuration.} 
-      \begin{itemize}
-         \item Authour and main developer 
-   \end{itemize}
-\end{itemize}
-
-
 %%%%%%%%%%%%%%%
 % EXPERIENCE
 %%%%%%%%%%%%%%%
@@ -125,7 +69,7 @@ development, documentation and support via mailing lists.
    \begin{tabularx}{1.0\linewidth}{X}
       \gray \bf\textsc{\large{Sequans Communications}} \normalfont\hfill Paris, France\\
       \gray \bf{Platform Software Engineer}\\
-      \gray June 2010 --- Present (1.5 years) \\
+      \gray June 2010 --- Present (2 years) \\
    \end{tabularx}
 
 \medskip
@@ -137,55 +81,56 @@ development, documentation and support via mailing lists.
 
 \begin{itemize}
    \item Board bring-up and HW/SW debugging (JTAG, oscilloscope,
-         logic analyzer, HW modifications)
+         logic analyzer, ASIC debugging, HW modifications). Work on a new SoC
+         designs from FPGA simulations and prototypes, through PCBs with first ASIC versions up
+         to the mature chip product
+   \item Compiled and prepared toolchains for ARMEB, MIPSEB and LM32
+            architectures based on Binutils, GCC and GDB.
+            Tested and debugged solutions on all 3 architectures and integrated
+            it into development build process.
+   \item Fully ported uClinux to SQN3010 SoC application processor based on
+            ARM946E-S. Fully ported Linux for MIPS, OpenWRT distribution to SQN3110 FPGA
+            chip, and re-wrote specific configuration, Makefile, shell and Perl scripts
+            and prepared a series of patches in a build system.
+   \item Implemented series of Linux device drivers (GPIO, SDIO, ...) and
+            low-level and userspace services. Created SW workarounds (driver
+            quirks) for ASIC bugs (specification non-alignments) in third party
+            IP cores
    \item Fully developed (from scratch) USIM physical layer driver and
             transport protocol layers of T=0 and T=1 protocols for Smart Card
             communication. Used Comprion and Micropross SC sniffers/analyzers
             and debugged solution. Debugged ASIC bugs and created workarounds
-            in SW. Debugged HW bugs due to the rising edge timings and voltage
-            levels using oscillosope and logic analyzers. 
+            in SW. Debugged HW bugs using oscilloscope and logic analyzers. 
             Designed (specification) and implemented low-level API and 
-            created a suite of unitary and productions tests.
+            created a suite of unitary and productions tests
    \item Enabled OpenOCD open-source project for ARM946E-S and MIPS24Kc
             platforms, contributing patches to the community under GPL
-            licence by merging separatly maintained git repositories to the
-            project mainline. Wrote complex shell and TCL scripts for usage of cheap
-            FTDI-based USB JTAG dongles and replacing expensive trhird-partner solutions,
-            which significantly reduced development costs for the company.
+            licence. Reverse-engineered Lattice Mico32 MonitorROM and third-party VHDL code.
+            Adapted UrJTAG for very low-level JTAG communication debugging.
+            Wrote complex shell and TCL scripts for usage of cheap
+            FTDI-based USB JTAG dongles and replacing expensive third-partner solutions,
+            which significantly reduced development costs for the company
             Given a support and training to other engineers on using
-            implemented solution. 
-   \item Revese-engineered Lattice Mico32 MonitorROM and third-party VHDL code
-            in order to develop support for OpenOCD usage of Layer 1 debugging by
-            JTAG. Adapted UrJTAG for very low-level JTAG communication debugging.
-   \item Fully ported uClinux to SQN3110 SoC application processor based on
-            ARM946E-S.
-   \item Fullty ported Linux for MIPS, OpenWRT distribution to SQN3110 FPGA
-            chip, and re-wrote specific configuration, Makefile, shell and Perl scripts
-            and prepared a series of patches in a build system.
+            implemented solution
    \item Fully wrote (from the scratch) scatter-gather zero-copy solution for
             inter-processor communication based on parallel communication between eCos
             and uClinux network drivers, using SW circular FIFOs and HW pointers.
             Developed Linux application to test the implementation by receiving
             RF packets sent from the eNodeB, sent via eCos driver and received
-            on Linux side, and observed traffic using Wireshark.
-   \item Ported SDIO Linux device drivers for SQN3110 FPGA-based SoC. Created
-            workarounds (driver quirks) for ASIC bugs
-            (misunderstood SDIO specification) of a third-party SDIO controller IP.
+            on Linux side, and observed traffic using Wireshark
    \item Implemented series of eCos RTOS drivers (watchdog, nework activity
-            GPIO, flash handling...) and low-level services. Modified
-            bootloader code and NVRAM configuration in the binary form.
-   \item Implemented IQ Missmatch driver for calculation phase, gain and offset
-            convergence and correction, and tested solution using tone generator and
-            tweaking Maxim RF chip set-up. implemented AT commands and services for
-            controlling of the solution.
-   \item Implemented driver for reading ISO images stored on the NOR flash and
-            proper handling of sector handling and wear leveling. Implemented
-            unitary test eCos application by creating ISO images on host Linux
-            and turning USB dongles (dev boards) into ISO storage.
-   \item Compiled and prepared toolchains for ARMEB, MIPSEB and LM32
-            architectures based on Binutils v2.19, GCC v4.5.1 and GDB v7.3.
-            Tested and debugged solutions on all 3 architectures and integrated
-            it into development build process.
+            GPIO, flash handling...) and low-level services : 
+            \begin{itemize}
+               \item IQ Mismatch driver for calculation phase, gain and offset
+                     convergence and correction, and tested solution using tone generator and
+                     tweaking Maxim RF chip set-up. Implemented AT commands and services for
+                     controlling of the solution
+               \item Implemented driver for reading ISO images stored on the NOR flash and
+                     proper handling of sector handling and wear leveling. Implemented
+                     unitary test eCos application by creating ISO images on host Linux
+                     and turning USB dongles (dev boards) into ISO storage
+            \end{itemize}
+         Modified bootloader code and NVRAM configuration in the binary form
    \end{itemize}
 
 
@@ -193,9 +138,9 @@ development, documentation and support via mailing lists.
 \bigskip
 
    \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bf\textsc{\large{Philips (acquired by Pace)}} \normalfont\hfill Paris, France\\
+      \gray \bf\textsc{\large{Pace (ex Philips STB)}} \normalfont\hfill Paris, France\\
       \gray \bf{Embedded Software Engineer}\\
-      \gray November 2009 --- June 2010 (9 months) \\
+      \gray November 2009 --- June 2010 (8 months) \\
    \end{tabularx}
 
 \medskip
@@ -213,12 +158,28 @@ development, documentation and support via mailing lists.
             proprietary bootcode with strong security constraints
    \item Wrote (in assembly language) bootstrap procedure for 
             auto-decompression of system binary in specific format and 
-            implemented 29/32-bit addressing mode switch needed to boot Linux image
-   \item Debugged NAND Flash driver in U-Boot. Integrated similar solution in Linux system
+            implemented 29/32-bit addressing mode switch needed to boot Linux
+            image. Implemented mechanism to pass Linux boot arguments from U-Boot
+            to kernel via bootstrap code
+   \item Debugged NAND Flash driver in U-Boot and resolved timing and Bad Block management issues.
+         Integrated similar solution in Linux system using MTD Utils and JFFS2 filesystem
    \item Implemented MAC address detection from NOR Flash 
             and appropriate environment setting in U-Boot and Linux
+   \item Implemented assembly code which places Audio and Video companions
+         (precompiled binaries) to correct shared memory locations before jumping
+         to Linux entry point and freed necessary RAM memory by reducing root filesystem size
+   \item Attended one week educational seminary and courses titled
+         "Embedded Linux kernel and device drivers programing"
+         organized by ORSYS group in Paris, France
+   \item Wrote Perl script which merges several kernel modules into one
+         (by renaming conflicting symbols) and implemented related mechanism
+         via shell scripts and Makefiles, needed for correct dynamic
+         loading of proprietary drivers
+   \item Work on Linux kernel security hardening by re-configuring kernel,
+         rootfs (Busybox), uClibc and user-space scripts to respect security constraints
+   \item Implemented kernel module to read NVRAM and
+         trigger userspace helper programs for mtd subsystem processing
 \end{itemize}
-
 
 %%% SPiDCOM %%%
 \bigskip
@@ -259,9 +220,10 @@ development, documentation and support via mailing lists.
             booting with candidate selection based on parameters stored in 
             custom image headers. Wrote user space applications for creating 
             these headers and modified Buildroot Makefiles to enable their pre-pending on image build
-   \item Implemented (from scratch) library for manipulating ethernet MME message 
-            structures and wrote unitary and functional test for new API 
-            using multi-threaded socket applications
+   \item Implemented (from scratch) library for manipulating ethernet type MME message 
+            structures and wrote unitary and functional tests in a form of
+            multithreaded application (POSIX threads) using libcheck
+            and TUN/TAP virtual Ethernet interface.
    \item Implemented (from scratch) library for system configuration 
             and wrote unitary and functional tests
 \end{itemize}
@@ -284,21 +246,21 @@ development, documentation and support via mailing lists.
    \textit{Module-level verification of In-Loop DeBlocking Filter and 
       Motion Estimation modules for digital video coding (compliant to several 
       modern standards: H.264, MPEG-4, etc.), part of the 
-      IVA Hardware Accelerator for OMAP4 plaform} 
+      IVA Hardware Accelerator for OMAP4 platform} 
 
 \begin{itemize}
    \item Fully wrote C testbenches, embedding them in the reference 
             decoder code (provided by third party vendors) and 
             programmed filter C model; Development done on Windows 
             (MS Visual C++ development environment) and Linux
-   \item Ported all code to Linux and devoloped C interface 
+   \item Ported all code to Linux and developed C interface 
             and synchronization mechanism to enable IPC with Specman RTL 
             simulation tool in order to test Verilog (hardware) code
    \item Wrote various Perl scripts and created Perl/Tk GUI application 
             to enable automatic running of the tests, 
             automatic logging and report creation.
    \item Defined and implemented (in C) functional coverage and algorithms 
-               to extract minimum set of testng conformance video 
+               to extract minimum set of testing conformance video 
                bitstreams needed for full coverage
 \end{itemize}
 
@@ -316,7 +278,7 @@ development, documentation and support via mailing lists.
    \item Extensive laboratory experience - proficiency with 
             various modern mobile telephony protocols test 
             equipment (ANITE, RACAL, CRTU, CMU200, CRTP, etc.)
-   \item Analyzed L1 Trace, troobleshooted L1 sofware in case of issues
+   \item Analyzed L1 Trace, troubleshooted L1 sofware in case of issues
    \item Fully developed GSM Voice “audio loopback” and BER 
             test cases, implemented complete automation of 
             GSM Voice test process for RACAL AIME 6103.
@@ -379,12 +341,72 @@ development, documentation and support via mailing lists.
 \end{itemize}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%
+% OPEN SOURCE PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%
+\section{OPEN SOURCE PROJECTS}
+GNU and FOSS evangelist, implicated in many open source projects in domains of
+development, maintaining, documentation and support.
+
+\begin{itemize}
+   %% OpenOCD %%
+   \item \textbf{OpenOCD} (\url{http://openocd.sourceforge.net/}) \\
+      \textit{The Open On-Chip Debugger (OpenOCD) aims to provide debugging,
+         in-system programming and boundary-scan testing for embedded target
+            devices.}
+      \begin{itemize}
+         \item Added support for ARM946E-S architecture
+         \item Corrected MIPS32 code and added microcodes for cache handling
+         \item Documented MIPS32 implementation and functionalities
+      \end{itemize}
+   %% WeIO %%
+   \item \textbf{WeIO} (\url{http://www.wecock.org}) \\
+      \textit{Project aims at bringing rapid prototyping and "internet of things"
+         platform under FOSS licence for both HW and SW. Homebrew "from the scratch"
+         implementation is employed and encouraged.}
+      \begin{itemize}
+         \item Project co-author and designer
+         \item Communication and co-operation with MicropendousX Open Hardware
+               project on PCB design.
+         \item Electronic components selection and ordering and soldering of
+               the HW development boards using PCB re-flow technique
+         \item Enabled OpenOCD low-level JTAG debugging. Wrote TCL
+               configuration scripts and test for HW sanity checking.
+         \item Compiled and prepared toolchain based on GCC and Binutils and
+               wrote build system as a combination of Bash shell scripts and set of Make files
+         \item Compiled/ported ARM CMSIS low-level libraries and drivers to NXP
+                  LPC1768 (ARM CORTEX-M3) architecture
+         \item Ported NuttX RTOS to WeIO platform
+      \end{itemize}
+   %% c0or1k %%
+   \item \textbf{Codezero OpenRISC Port} (\url{http://opencores.org/project,c0or1k}) \\
+         \textit{Codezero is a new L4 microkernel that has been written from scratch,
+            following the latest development and research principles on
+               microkernel design. Project \textbf{c0or1k} aims at porting this
+               microkernel to general purpose open source RISC CPU
+               architectures.}
+      \begin{itemize}
+         \item Main maintainer of the project 
+         \item Modified SCons and CML2 configuration and build system and implemented set of
+               Python development utilities
+         \item Ported C0 code OpenRISC 1000 architecture
+   \end{itemize}
+   %% hipstery %%
+   \item \textbf{Hipstery} (\url{https://github.com/drasko/hipstery}) \\
+      \textit{Perl script to automatically generate Lo-Fi web photo-gallery. It
+         produces W3C compliant CSS editable HTML code based on a simple user configuration.} 
+      \begin{itemize}
+         \item Author and main developer 
+   \end{itemize}
+\end{itemize}
+
+
 %%%%%%%%%%%%%%
 % EDUCATION
 %%%%%%%%%%%%%%
 \section{EDUCATION}
 
-   \textbf{\textsc{Diploma Engeneer (equivalent to M.Sc.)}} \\
+   \textbf{\textsc{Diploma Engineer (equivalent to M.Sc.)}} \\
    \textsc{School of Electrical Engineering, University of Belgrade} \\
    \textit{department of Electronics, Telecommunications and Control}
 
@@ -397,13 +419,25 @@ development, documentation and support via mailing lists.
    Student projects:
 
 \begin{itemize}
-   \item RT application for railroad taffic signaling 
+   \item RT application for railroad traffic signaling 
             and organization written in C++ using API of a custom RT kernel
    \item Retriggerable timer with 7-seg display 
-            based on PIC16F84 uC written in assmbley (MPlab IDE)
-   \item 10-band audio equilizer schematic and 
+            based on PIC16F84 uC written in assembly (MPlab IDE)
+   \item 10-band audio equalizer schematic and 
             layout implementation in Protel package
    \item JK flip-flop VLSI layout done in Magic VLSI tool
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% FOREIGN LANGUAGES
+%%%%%%%%%%%%%%%%%%%%%%%
+\section{FOREIGN LANGUAGES}
+\begin{itemize}
+   \item English (excellent)
+   \item French (good)
+   \item Russian (understanding)
+   \item Serbian (mother tongue)
 \end{itemize}
 
 
@@ -415,8 +449,7 @@ development, documentation and support via mailing lists.
    \item Music playing (guitar) and sound and video production using GNU
             tools
    \item Contemporary and fine art photography, analogue and digital 
-   \item Karate (karateka and official member of
-         \href{http://www.ffkarate.fr/}{Franch Karate Federation})
+   \item Karate (karateka and official member of Franch Karate Federation)
    \item Film, literature and philosophy
 \end{itemize}
 

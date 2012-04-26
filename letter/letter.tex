@@ -1,23 +1,57 @@
 \documentclass[standard]{scrlttr2}
 
 \usepackage{pst-barcode}
+\usepackage{graphicx}
+
 
 \begin{document}
 
 \begin{letter}{
-   Damage Inc. --- HR Dept.\\
-   Paulus Potterstraat 134\\
-   1753KJ Amsterdam \\
+   Acme Corporation --- HR Dept.\\
+   1 Rue de Belgrade \\
+   75001 Paris, France \\
    \psbarcode[transy=-0.2cm,transx=0.1cm]{1234567}{}{royalmail}
 }
 
 
 \setkomavar{subject}{Cover Letter}
-\opening{Dear Recruiter,}
+\opening{Dear Sir / Madam,}
+Via my professional network I learned about your need for a Software Application Engineer
+within Acme's Software and Solutions Group (job reference \#1234) in Paris, France.
 
-The development of Linux is one of the most prominent examples of free and open source software collaboration: the underlying source code may be used, modified, and distributed—commercially or non-commercially—by anyone under licenses such as the GNU General Public License. Typically Linux is packaged in a format known as a Linux distribution for desktop and server use. Some popular mainstream Linux distributions include Debian (and its derivatives such as Ubuntu), Fedora and openSUSE. Linux distributions include the Linux kernel, supporting utilities and libraries and usually a large amount of application software to fulfill the distribution's intended use.
+\bigskip
+\noindent
+I am very interested in further discussing this exciting opportunities with
+Acme, and I believe that my education, professional experience and
+well-rounded employment background are appropriate for these positions.
 
-\closing{With kind regards,}
+\bigskip
+\noindent
+After completion of my M.S. in Electrical Engineering, I worked in the
+Semiconductor Industry, as well as in Consumer Electronics and Telecom divisions for
+8 years. My engineering efforts and expertise consistently met or exceeded
+company goals, yielding success in business development. I would like to continue
+and augment that success in the electronic industry,
+using my wide professional experience and academic background.
+
+\bigskip
+\noindent
+Attached is a copy of my resume, which more fully details my
+qualifications for the position.
+
+\bigskip
+\noindent
+I look forward to talking with you regarding engineering opportunities with
+Acme.
+
+\bigskip
+\noindent
+Thank you very kindly for your time in review of my resume and for consideration
+of permanent, full-time employment.
+
+\closing{With kind regards,\\
+   \includegraphics[height=17mm]{signature.eps}\\*[-15mm]
+}
 
 \end{letter}
 \end{document}

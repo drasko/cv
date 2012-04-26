@@ -7,15 +7,15 @@
 % ==============================================
 %  PERSONAL DATA
 % ==============================================
-\setkomavar{fromname}{Iulius Caesar}
-\setkomavar{fromaddress}{Van Eeghenlaan 69\\1691QT Amsterdam\\Nederland}
-\setkomavar{fromphone}{+31 (0)22 7394203}
-\setkomavar{fromemail}{iulius@gmail.com}
-\setkomavar{fromfax}{+31 (0)71 5144543}
-\setkomavar{fromurl}{http://stefano.italians.nl}
-\setkomavar{frombank}{Postbank 9307157}
-\setkomavar{place}{Amsterdam}
-\setkomavar{signature}{Iulius Caesar}
+\setkomavar{fromname}{Drasko DRASKOVIC}
+\setkomavar{fromaddress}{108 Rue Lecourbe\\75015 Paris\\France}
+\setkomavar{fromphone}{+33 (0)6 73487750}
+\setkomavar{fromemail}{drasko.draskovic@gmail.com}
+%\setkomavar{fromfax}{+31 (0)71 5144543}
+\setkomavar{fromurl}{http://drasko.sdf.org}
+%\setkomavar{frombank}{Postbank 9307157}
+\setkomavar{place}{Paris}
+\setkomavar{signature}{Drasko DRASKOVIC}
  
 % ==============================================
 %  FORMATTING STUFF
@@ -27,13 +27,13 @@
 %\setsansfont {Gill Sans Std}
  
 %set the font size and leading
-\renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
+\renewcommand{\normalsize}{\fontsize{10}{13}\selectfont}
  
 % === header settings
 \firsthead{
    \centering
-         {\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
-         \fontsize{21}{21}\selectfont\scshape Programmer and Architect at Initech
+         {\addfontfeature{LetterSpace=20.0}\fontsize{20}{20}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
+         \fontsize{14}{14}\selectfont\scshape Embedded Software Engineer, M.Sc. in Electrical Engineering
 }
  
 % === footer settings
