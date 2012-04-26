@@ -8,7 +8,7 @@
 #############################################
 
 CV compilation :
-> acroread cv.pdf
+> pdflatex cv.tex
 
 Cover Letter compilation :
 > xelatex letter.tex
