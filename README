@@ -13,6 +13,10 @@ CV compilation :
 Cover Letter compilation :
 > xelatex letter.tex
 
+Latex 2 Word (doc)
+> latex filename.tex
+> tex4ht filename.tex
+> mk4ht oolatex filename.tex
 
 ---
 Based on the tutorial from :
