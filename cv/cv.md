@@ -1,7 +1,10 @@
-PROFESSIONAL EXPERIENCE
-Devialet Paris, France
-R&D Software Engineer (Embedded Linux Expert)
-March 2013 — Present (1 year)
+## PROFESSIONAL EXPERIENCE
+
+**Devialet Paris, France**
+
+**R&D Software Engineer (Embedded Linux Expert)**
+
+**March 2013 — Present (1 year)**
 
 Work on system design of wireless digital audio system of next generation based on dual-
 core ARM Cortex-A9 FPGA with custom hard-RT Xenomai-patched Yocto Poky Linux
