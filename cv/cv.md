@@ -1,34 +1,32 @@
 ## PROFESSIONAL EXPERIENCE
 
-**Devialet Paris, France**
+| Devialet (Paris, France) |
+|-|
+| R&D Software Engineer (Embedded Linux Expert) |
+| March 2013 — November 2014 (1.5 year) |
 
-**R&D Software Engineer (Embedded Linux Expert)**
+> Work on system design of wireless digital audio system of next generation based on dual-
+> core ARM Cortex-A9 FPGA with custom hard-RT Xenomai-patched Yocto Poky Linux
+> kernel and dual-band 802.11abgn WiFi connection
 
-**March 2013 — Present (1 year)**
-
-Work on system design of wireless digital audio system of next generation based on dual-
-core ARM Cortex-A9 FPGA with custom hard-RT Xenomai-patched Yocto Poky Linux
-
-kernel and dual-band 802.11abgn WiFi connection
- Participated in system design, both HW and SW. Electronic components selection
+- Participated in system design, both HW and SW. Electronic components selection
 and sourcing. SW architecture.
- Work on Linux system: wrote scripts to automatize OS creation, prototyped the
 
-system using Debian and Linaro Ubuntu on Pandaboard (vanilla kernel + deboot-
-strap) and Wandboard (Freescale OpenEmbedded for i.MX6). Integrated Linux
-
-for Altera FPGA CycloneV board. Created and maintained platform build sys-
-tem based on Yocto and custom meta layer. Wrote Bitbake recipes and OPKG
-
+- Work on Linux system: wrote scripts to automatize OS creation, prototyped the
+system using Debian and Linaro Ubuntu on Pandaboard (vanilla kernel + debootstrap)
+and Wandboard (Freescale OpenEmbedded for i.MX6). Integrated Linux
+for Altera FPGA CycloneV board. Created and maintained platform build system
+based on Yocto and custom meta layer. Wrote Bitbake recipes and OPKG
 packages. Worked on Buildroot platform builder.
 
- Investigated synchronization over WiFi using NTP and PTP protocols. Imple-
-mented precise pulse-per-second GPIO kernel driver and used oscilloscope to ob-
-serve and measure synchronization
+- Investigated synchronization over WiFi using NTP and PTP protocols. Implemented
+precise pulse-per-second GPIO kernel driver and used oscilloscope to observe and measure
+synchronization
 
- Proposed and integrated Xenomai hard-realtime kernel patches to obtain needed
+- Proposed and integrated Xenomai hard-realtime kernel patches to obtain needed
 RT performances for audio processing and communication with FPGA cores
- Participated in creation of boot and update procedure specification. Compiled
+
+- Participated in creation of boot and update procedure specification. Compiled
 and integrated U-Boot for Altera Socfpga target and resolved problems with SPL
 preloader creation and FPGA sub-system load procedure
 
