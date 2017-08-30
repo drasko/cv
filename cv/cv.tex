@@ -62,14 +62,57 @@
 %%%%%%%%%%%%%%%
 \section{EXPERIENCE}
 
-%%% Sequans Communications %%%
-%\renewcommand{\arraystretch}{1.1}
+%%% NOKIA (ex Alcatel-Lucent)  %%%
 \newcommand{\gray}{\rowcolor[gray]{.90}}
-   %\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
    \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bf\textsc{\large{Sequans Communications}} \normalfont\hfill Paris, France\\
-      \gray \bf{Platform Software Engineer}\\
-      \gray June 2010 --- Present (2 years) \\
+	   \gray \bfseries\textsc{\large{NOKIA (ex Alcatel-Lucent)}} \normalfont\hfill Paris, France\\
+      \gray \bfseries{Senior Software Engineer}\\
+      \gray November 2014 --- Present (3 years) \\
+   \end{tabularx}
+
+\medskip
+
+   \textit{Work multi-standard LTE femto-cell, Linux based. Work on 5G. Work on Blockchain.}
+
+\begin{itemize}
+	\item Assured Quallcom deliveries of Linux BSP for multi-standard LTE femto-cells on projects for ATT and T-Mobile.
+	\item Implemented (in C++) 5G features for new NOKIA projects 
+	\item Obtained grant from internal NOKIA internal Venture Capital accelarator to bootstrap new bussiness around Blockchain technology
+\end{itemize}
+
+%%% Devialet %%%
+   \begin{tabularx}{1.0\linewidth}{X}
+      \gray \bfseries\textsc{\large{Devialet}} \normalfont\hfill Paris, France\\
+      \gray \bfseries{Software Architect}\\
+	   \gray March 2013 --- NOvember 2014 (1.5 years) \\
+   \end{tabularx}
+
+\medskip
+
+   \textit{Work on system design of wireless digital audio system of next generation based on dual-
+			core ARM Cortex-A9 FPGA with custom hard-RT Xenomai-patched
+			Yocto Poky Linux kernel and dual-band 802.11abgn WiFi connection}
+
+\begin{itemize}
+	\item Participated in system design, both HW and SW. Electronic components selection and sourcing. SW architecture.
+	\item Work on Linux system: wrote scripts to automatize OS creation, prototyped the system
+			using Debian and Linaro Ubuntu on Pandaboard (vanilla kernel + debootstrap) and Wandboard (Freescale OpenEmbedded for i.MX6).
+			Integrated Linux for Altera FPGA CycloneV board. Created and maintained platform build system based
+			on Yocto and custom meta layer. Wrote Bitbake recipes and OPKG packages. Worked on Buildroot platform builder.
+	\item Investigated synchronization over WiFi using NTP and PTP protocols. Implemented precise pulse-per-second
+			GPIO kernel driver and used oscilloscope to observe and measure synchronization
+
+	\item Proposed and integrated Xenomai hard-realtime kernel patches to obtain needed RT performances
+			for audio processing and communication with FPGA cores
+	\item Participated in creation of boot and update procedure specification. Compiled and integrated
+			U-Boot for Altera Socfpga target and resolved problems with SPL preloader creation and FPGA sub-system load procedure
+\end{itemize}
+
+%%% Sequans Communications %%%
+   \begin{tabularx}{1.0\linewidth}{X}
+      \gray \bfseries\textsc{\large{Sequans Communications}} \normalfont\hfill Paris, France\\
+      \gray \bfseries{Platform Software Engineer}\\
+      \gray June 2010 --- March 2013 (2.5 years) \\
    \end{tabularx}
 
 \medskip
@@ -138,8 +181,8 @@
 \bigskip
 
    \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bf\textsc{\large{Pace (ex Philips STB)}} \normalfont\hfill Paris, France\\
-      \gray \bf{Embedded Software Engineer}\\
+      \gray \bfseries\textsc{\large{Pace (ex Philips STB)}} \normalfont\hfill Paris, France\\
+      \gray \bfseries{Embedded Software Engineer}\\
       \gray November 2009 --- June 2010 (8 months) \\
    \end{tabularx}
 
@@ -185,8 +228,8 @@
 \bigskip
 
    \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bf\textsc{\large{SPiDCOM Technologies}} \normalfont\hfill Paris, France\\
-      \gray \bf{Embedded Software Engineer}\\
+      \gray \bfseries\textsc{\large{SPiDCOM Technologies}} \normalfont\hfill Paris, France\\
+      \gray \bfseries{Embedded Software Engineer}\\
       \gray December 2008 - November 2009 (1 year) \\
    \end{tabularx}
 
@@ -233,8 +276,8 @@
 \bigskip
 
    \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bf\textsc{\large{Texas Instruments}} \normalfont\hfill Nice, France\\
-      \gray \bf{Multimedia Software Engineer}\\
+      \gray \bfseries\textsc{\large{Texas Instruments}} \normalfont\hfill Nice, France\\
+      \gray \bfseries{Multimedia Software Engineer}\\
       \gray July 2006 - December 2008 (2 year 7 months) \\
    \end{tabularx}
 
@@ -290,8 +333,8 @@
 \bigskip
 
    \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bf\textsc{\large{FNX Solutions}} \normalfont\hfill Belgrade, Serbia\\
-      \gray \bf{Software Engineer}\\
+      \gray \bfseries\textsc{\large{FNX Solutions}} \normalfont\hfill Belgrade, Serbia\\
+      \gray \bfseries{Software Engineer}\\
       \gray August 2005 - July 2006 (1 year)\\
    \end{tabularx}
 
@@ -323,8 +366,8 @@
 \bigskip
 
    \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bf\textsc{\small{Innovational Centre of School of Electrical Engeneering}} \normalfont\hfill Belgrade, Serbia\\
-      \gray \bf{Research Assistant}\\
+      \gray \bfseries\textsc{\small{Innovational Centre of School of Electrical Engeneering}} \normalfont\hfill Belgrade, Serbia\\
+      \gray \bfseries{Research Assistant}\\
       \gray August 2004 - August 2005 (1 year 1 month)\\
    \end{tabularx}
 
@@ -349,18 +392,18 @@ GNU and FOSS evangelist, implicated in many open source projects in domains of
 development, maintaining, documentation and support.
 
 \begin{itemize}
-   %% OpenOCD %%
-   \item \textbf{OpenOCD} (\url{http://openocd.sourceforge.net/}) \\
-      \textit{The Open On-Chip Debugger (OpenOCD) aims to provide debugging,
-         in-system programming and boundary-scan testing for embedded target
-            devices.}
+   %% Mainflux %%
+   \item \textbf{Mainflux} (\url{https://github.com/Mainflux/mainflux}) \\
+      \textit{Mainflux IoT Platform}
       \begin{itemize}
-         \item Added support for ARM946E-S architecture
-         \item Corrected MIPS32 code and added microcodes for cache handling
-         \item Documented MIPS32 implementation and functionalities
+         \item Project author and main achitect
+		 \item Implemented reference version in Javascript (NodeJS) and Go
+         \item Set-up team of experts and rised community awarnes
+         \item Documented implementation and functionalities
+         \item Presented project on conferences all over the world
       \end{itemize}
    %% WeIO %%
-   \item \textbf{WeIO} (\url{http://www.wecock.org}) \\
+   \item \textbf{WeIO} (\url{http://www.we-io.net}) \\
       \textit{Project aims at bringing rapid prototyping and "internet of things"
          platform under FOSS licence for both HW and SW. Homebrew "from the scratch"
          implementation is employed and encouraged.}
@@ -377,27 +420,18 @@ development, maintaining, documentation and support.
          \item Compiled/ported ARM CMSIS low-level libraries and drivers to NXP
                   LPC1768 (ARM CORTEX-M3) architecture
          \item Ported NuttX RTOS to WeIO platform
+         \item Ported Liux to WeIO platform and assured Linux BSP
       \end{itemize}
-   %% c0or1k %%
-   \item \textbf{Codezero OpenRISC Port} (\url{http://opencores.org/project,c0or1k}) \\
-         \textit{Codezero is a new L4 microkernel that has been written from scratch,
-            following the latest development and research principles on
-               microkernel design. Project \textbf{c0or1k} aims at porting this
-               microkernel to general purpose open source RISC CPU
-               architectures.}
+   %% OpenOCD %%
+   \item \textbf{OpenOCD} (\url{http://openocd.sourceforge.net/}) \\
+      \textit{The Open On-Chip Debugger (OpenOCD) aims to provide debugging,
+         in-system programming and boundary-scan testing for embedded target
+            devices.}
       \begin{itemize}
-         \item Main maintainer of the project 
-         \item Modified SCons and CML2 configuration and build system and implemented set of
-               Python development utilities
-         \item Ported C0 code OpenRISC 1000 architecture
-   \end{itemize}
-   %% hipstery %%
-   \item \textbf{Hipstery} (\url{https://github.com/drasko/hipstery}) \\
-      \textit{Perl script to automatically generate Lo-Fi web photo-gallery. It
-         produces W3C compliant CSS editable HTML code based on a simple user configuration.} 
-      \begin{itemize}
-         \item Author and main developer 
-   \end{itemize}
+         \item Added support for ARM946E-S architecture
+         \item Corrected MIPS32 code and added microcodes for cache handling
+         \item Documented MIPS32 implementation and functionalities
+      \end{itemize}
 \end{itemize}
 
 
