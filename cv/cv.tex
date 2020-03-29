@@ -1,490 +1,275 @@
-%#############################################
-%##                                         ##
-%##   Professional CV of Drasko DRASKOVIC   ##
-%##                                         ##
-%#############################################
-
-\documentclass[a4paper, oneside, final]{scrartcl}
+\documentclass[8pt, a4paper, oneside, final]{scrartcl}
 \usepackage{soul}
 \usepackage{scrpage2}
 \usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage[usenames, dvipsnames]{color}
 \usepackage{amsfonts,graphicx}
 %\usepackage[pdfstartview=FitH,urlcolor=blue,colorlinks=true,bookmarks=true]{hyperref}
 \usepackage[pdfstartview=FitH,pdfcreator={Drasko DRASKOVIC}]{hyperref}
 \usepackage{marvosym}
 \usepackage{tabularx,colortbl}
+\usepackage{amssymb}
+\usepackage{fontawesome}
+\usepackage{dashrule}
+\usepackage[svgnames]{xcolor}
+\usepackage{graphicx}
+\usepackage[margin=0.1\textwidth]{geometry}
+\usepackage{wrapfig}
+
 \pagestyle{plain}   % do page numbering ('empty' turns off)
 \frenchspacing      % no aditional spaces after periods
-\setlength{\parskip}{8pt}\parindent=0pt  % no paragraph indentation
 
-\usepackage{bold-extra}
+\titleformat{\section}         % Customise the \section command
+  {\Large\scshape\raggedright} % Make the \section headers large (\Large),
+                               % small capitals (\scshape) and left aligned (\raggedright)
+  {}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
+  {}                           % Can be used to insert code before the heading
+  [\titlerule]                 % Inserts a horizontal line after the heading
 
-\usepackage{amssymb}
-\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\titleformat{\subsection}
+  {\large\scshape\raggedright}
+  {}{0em}
+  {}
 
 
 
-%\usepackage[T1]{fontenc}
-
-
-\title{d-code}
-\author{Drasko DRASKOVIC}
 \begin{document}
-%\date{05/13/2010}
-%\maketitle
-%\clearpage
 
-\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule]
+  \begin{tabular}{@{}m{0.15\linewidth}l}
 
-%%%%%%%%%%%%%%%%%%
-% HEADER
-%%%%%%%%%%%%%%%%%% 
-\begin{center}
+    \includegraphics[width=\linewidth]{ja-mali.jpg} &
 
-   \textsc{\huge{\so{Drasko DRASKOVIC}}}
+    \renewcommand{\arraystretch}{2.5}
+    \begin{tabular}{@{}|l}
 
-   % add the symbols for email and phone contact data
-   \so{108 Rue Lecourbe, 75015 Paris, France}\\
-   \so{{\Large\Letter} drasko.draskovic@gmail.com \ {\Large\Telefon} +33 (0)6 73487750}
+      \textsc{\huge{Drasko Draskovic}} \\
+      \large{R\&D Engineer and Software Architect} \\
 
-\end{center}
+      \renewcommand{\arraystretch}{1}
+      \begin{tabular}{@{}lll}
+        \small{\faAt} drasko.draskovic@gmail.com &
+        \small{\faEnvelopeO} 135 Rue D'Alesia, 75014 &
+        \small{\faMapMarker} Paris, France \\
+        \small{\faLinkedin} \href{https://www.linkedin.com/in/draskodraskovic}{@draskodraskovic} &
+        \small{\faGithub} \href{https://github.com/drasko}{@drasko} &
+        \small{\faTwitter} \href{https://twitter.com/draskodraskovic}{@draskodraskovic}
+      \end{tabular}
 
-%%%%%%%%%%%%%%%%
-% OBJECTIVE
-%%%%%%%%%%%%%%%%
-\section{OBJECTIVE}
-   A software engineer position in a results-oriented company that seeks an
-   ambitious and career-conscious person, where acquired skills and education
-   will be utilized toward continued growth and advancement.
+    \end{tabular}
 
-%%%%%%%%%%%%%%%
-% EXPERIENCE
-%%%%%%%%%%%%%%%
-\section{EXPERIENCE}
+  \end{tabular}
 
-%%% NOKIA (ex Alcatel-Lucent)  %%%
-\newcommand{\gray}{\rowcolor[gray]{.90}}
-   \begin{tabularx}{1.0\linewidth}{X}
-	   \gray \bfseries\textsc{\large{NOKIA (ex Alcatel-Lucent)}} \normalfont\hfill Paris, France\\
-      \gray \bfseries{Senior Software Engineer}\\
-      \gray November 2014 --- Present (3 years) \\
-   \end{tabularx}
+\vspace{6mm}
 
-\medskip
+\begin{minipage}[t]{0.48\linewidth}
+  \section{Work Experience}
 
-   \textit{Work multi-standard LTE femto-cell, Linux based. Work on 5G. Work on Blockchain.}
+  \vspace{3mm}
 
-\begin{itemize}
-	\item Assured Quallcom deliveries of Linux BSP for multi-standard LTE femto-cells on projects for AT\&T and T-Mobile.
-	\item Implemented (in C++) 5G features for new NOKIA projects 
-	\item Obtained grant from internal NOKIA internal Venture Capital accelarator to bootstrap new bussiness around Blockchain technology
-\end{itemize}
+  %%%%%%
+  %% Nokia
+  %%%%%%
+  {\color{Gray}
+    \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}l}
+      {\color{RubineRed} \textsc{Nokia}} \smallskip & \\
+      \small{\faCalendar} \hspace{0.01\linewidth} November 2014 -- Present & \small{\faMapMarker} \hspace{0.01\linewidth} Paris, France \\
+    \end{tabular*}
 
-%%% Devialet %%%
-   \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bfseries\textsc{\large{Devialet}} \normalfont\hfill Paris, France\\
-      \gray \bfseries{Software Architect}\\
-	   \gray March 2013 --- NOvember 2014 (1.5 years) \\
-   \end{tabularx}
+    \smallskip
+    {\color{Black}\textbf{Senior R\&D Engineer and Software Architect}}
+  }
 
-\medskip
-
-   \textit{Work on system design of wireless digital audio system of next generation based on dual-
-			core ARM Cortex-A9 FPGA with custom hard-RT Xenomai-patched
-			Yocto Poky Linux kernel and dual-band 802.11abgn WiFi connection}
-
-\begin{itemize}
-	\item Participated in system design, both HW and SW. Electronic components selection and sourcing. SW architecture.
-	\item Work on Linux system: wrote scripts to automatize OS creation, prototyped the system
-			using Debian and Linaro Ubuntu on Pandaboard (vanilla kernel + debootstrap) and Wandboard (Freescale OpenEmbedded for i.MX6).
-			Integrated Linux for Altera FPGA CycloneV board. Created and maintained platform build system based
-			on Yocto and custom meta layer. Wrote Bitbake recipes and OPKG packages. Worked on Buildroot platform builder.
-	\item Investigated synchronization over WiFi using NTP and PTP protocols. Implemented precise pulse-per-second
-			GPIO kernel driver and used oscilloscope to observe and measure synchronization
-
-	\item Proposed and integrated Xenomai hard-realtime kernel patches to obtain needed RT performances
-			for audio processing and communication with FPGA cores
-	\item Participated in creation of boot and update procedure specification. Compiled and integrated
-			U-Boot for Altera Socfpga target and resolved problems with SPL preloader creation and FPGA sub-system load procedure
-\end{itemize}
-
-%%% Sequans Communications %%%
-   \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bfseries\textsc{\large{Sequans Communications}} \normalfont\hfill Paris, France\\
-      \gray \bfseries{Platform Software Engineer}\\
-      \gray June 2010 --- March 2013 (2.5 years) \\
-   \end{tabularx}
-
-\medskip
-
-   \textit{Work on platform enablement, system and device drivers for LTE
-   multi-processor SoCs, based on ARM946E-S, MIPS24Kc and Lattice Mico32
-   architectures with eCos RTOS (for baseband CPU) and Linux (for application CPU)
-   as a systems of choice.}
-
-\begin{itemize}
-   \item Board bring-up and HW/SW debugging (JTAG, oscilloscope,
-         logic analyzer, ASIC debugging, HW modifications). Work on a new SoC
-         designs from FPGA simulations and prototypes, through PCBs with first ASIC versions up
-         to the mature chip product
-   \item Compiled and prepared toolchains for ARMEB, MIPSEB and LM32
-            architectures based on Binutils, GCC and GDB.
-            Tested and debugged solutions on all 3 architectures and integrated
-            it into development build process.
-   \item Fully ported uClinux to SQN3010 SoC application processor based on
-            ARM946E-S. Fully ported Linux for MIPS, OpenWRT distribution to SQN3110 FPGA
-            chip, and re-wrote specific configuration, Makefile, shell and Perl scripts
-            and prepared a series of patches in a build system.
-   \item Implemented series of Linux device drivers (GPIO, SDIO, ...) and
-            low-level and userspace services. Created SW workarounds (driver
-            quirks) for ASIC bugs (specification non-alignments) in third party
-            IP cores
-   \item Fully developed (from scratch) USIM physical layer driver and
-            transport protocol layers of T=0 and T=1 protocols for Smart Card
-            communication. Used Comprion and Micropross SC sniffers/analyzers
-            and debugged solution. Debugged ASIC bugs and created workarounds
-            in SW. Debugged HW bugs using oscilloscope and logic analyzers. 
-            Designed (specification) and implemented low-level API and 
-            created a suite of unitary and productions tests
-   \item Enabled OpenOCD open-source project for ARM946E-S and MIPS24Kc
-            platforms, contributing patches to the community under GPL
-            licence. Reverse-engineered Lattice Mico32 MonitorROM and third-party VHDL code.
-            Adapted UrJTAG for very low-level JTAG communication debugging.
-            Wrote complex shell and TCL scripts for usage of cheap
-            FTDI-based USB JTAG dongles and replacing expensive third-partner solutions,
-            which significantly reduced development costs for the company
-            Given a support and training to other engineers on using
-            implemented solution
-   \item Fully wrote (from the scratch) scatter-gather zero-copy solution for
-            inter-processor communication based on parallel communication between eCos
-            and uClinux network drivers, using SW circular FIFOs and HW pointers.
-            Developed Linux application to test the implementation by receiving
-            RF packets sent from the eNodeB, sent via eCos driver and received
-            on Linux side, and observed traffic using Wireshark
-   \item Implemented series of eCos RTOS drivers (watchdog, nework activity
-            GPIO, flash handling...) and low-level services : 
-            \begin{itemize}
-               \item IQ Mismatch driver for calculation phase, gain and offset
-                     convergence and correction, and tested solution using tone generator and
-                     tweaking Maxim RF chip set-up. Implemented AT commands and services for
-                     controlling of the solution
-               \item Implemented driver for reading ISO images stored on the NOR flash and
-                     proper handling of sector handling and wear leveling. Implemented
-                     unitary test eCos application by creating ISO images on host Linux
-                     and turning USB dongles (dev boards) into ISO storage
-            \end{itemize}
-         Modified bootloader code and NVRAM configuration in the binary form
-   \end{itemize}
-
-
-%%% PACE %%%
-\bigskip
-
-   \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bfseries\textsc{\large{Pace (ex Philips STB)}} \normalfont\hfill Paris, France\\
-      \gray \bfseries{Embedded Software Engineer}\\
-      \gray November 2009 --- June 2010 (8 months) \\
-   \end{tabularx}
-
-\medskip
-
-   \textit{Low level system programming for HD TV WiFi Zapper satelite set-top box solution
-            based on ST7105 SoC with SH4 RISC processor,
-            running embedded Linux as an OS of choice.}
-
-\begin{itemize}
-   \item Work on ethernet and USB drivers for U-Boot bootloader
-   \item Bundled Linux image with intiramfs for use on 
-            USB key to simulate missing flash memory
-   \item Rewrote U-Boot procedures and changed low-level 
-            initialization (poke table) in order to use it with 
-            proprietary bootcode with strong security constraints
-   \item Wrote (in assembly language) bootstrap procedure for 
-            auto-decompression of system binary in specific format and 
-            implemented 29/32-bit addressing mode switch needed to boot Linux
-            image. Implemented mechanism to pass Linux boot arguments from U-Boot
-            to kernel via bootstrap code
-   \item Debugged NAND Flash driver in U-Boot and resolved timing and Bad Block management issues.
-         Integrated similar solution in Linux system using MTD Utils and JFFS2 filesystem
-   \item Implemented MAC address detection from NOR Flash 
-            and appropriate environment setting in U-Boot and Linux
-   \item Implemented assembly code which places Audio and Video companions
-         (precompiled binaries) to correct shared memory locations before jumping
-         to Linux entry point and freed necessary RAM memory by reducing root filesystem size
-   \item Attended one week educational seminary and courses titled
-         "Embedded Linux kernel and device drivers programing"
-         organized by ORSYS group in Paris, France
-   \item Wrote Perl script which merges several kernel modules into one
-         (by renaming conflicting symbols) and implemented related mechanism
-         via shell scripts and Makefiles, needed for correct dynamic
-         loading of proprietary drivers
-   \item Work on Linux kernel security hardening by re-configuring kernel,
-         rootfs (Busybox), uClibc and user-space scripts to respect security constraints
-   \item Implemented kernel module to read NVRAM and
-         trigger userspace helper programs for mtd subsystem processing
-\end{itemize}
-
-%%% SPiDCOM %%%
-\bigskip
-
-   \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bfseries\textsc{\large{SPiDCOM Technologies}} \normalfont\hfill Paris, France\\
-      \gray \bfseries{Embedded Software Engineer}\\
-      \gray December 2008 - November 2009 (1 year) \\
-   \end{tabularx}
-
-\medskip
-
-   \textit{Firmware design and implementation for new SPiDCOM SPC300 HomePlug AV
-   protocol (powerline communication) compliant SoC. Creation of BSP and
-   Linux (with U-Boot) SW bundle for ARM based chip}
-
-\begin{itemize}
-   \item Implemented SDRAM controller configuration under 
-            U-Boot bootloader in ARM assembly language
-   \item Designed (specification creation) a custom protocol 
-            for firmware update based on Ethernet-type Homeplug AV 
-            MME messages and implemented it in C. Wrote PC host 
-            client application (based on Linux raw sockets) to test 
-            and debug protocol implementation.
-   \item Fully wrote MAC controller (Ethernet) driver and enabled TFTP image boot
-   \item Enabled ARM MMU (caches and pagetable set-up, 
-            defined virtual to physical mapping, etc...) under U-Boot 
-            in order to enable DCache, which significantly speeded up 
-            Linux image transfer and all pre-boot operations
-   \item Designed (specification creation) a custom protocol for 
-            FW update based on Ethernet-type Homeplug AV MME messages 
-            and implemented it in C. Wrote PC host client application 
-            (based on Linux raw sockets) to test and debug protocol implementation
-   \item Implemented (ARM assembly) code for autodetection of parameters stored on 
-            flash used on board wake-up and debuged implementation with jtag and GDB. 
-            Wrote OpenOCD jtag and GDB scripts to speed up debugging process
-   \item Wrote (in C) Linux image boot procedure that supports dual image 
-            booting with candidate selection based on parameters stored in 
-            custom image headers. Wrote user space applications for creating 
-            these headers and modified Buildroot Makefiles to enable their pre-pending on image build
-   \item Implemented (from scratch) library for manipulating ethernet type MME message 
-            structures and wrote unitary and functional tests in a form of
-            multithreaded application (POSIX threads) using libcheck
-            and TUN/TAP virtual Ethernet interface.
-   \item Implemented (from scratch) library for system configuration 
-            and wrote unitary and functional tests
-\end{itemize}
-
-
-%%% Texas Instruments  %%%
-\bigskip
-
-   \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bfseries\textsc{\large{Texas Instruments}} \normalfont\hfill Nice, France\\
-      \gray \bfseries{Multimedia Software Engineer}\\
-      \gray July 2006 - December 2008 (2 year 7 months) \\
-   \end{tabularx}
-
-\medskip
-   
-   \textbf{DSP Architecture and Applications Group}
-   \smallskip
-
-   \textit{Module-level verification of In-Loop DeBlocking Filter and 
-      Motion Estimation modules for digital video coding (compliant to several 
-      modern standards: H.264, MPEG-4, etc.), part of the 
-      IVA Hardware Accelerator for OMAP4 platform} 
-
-\begin{itemize}
-   \item Fully wrote C testbenches, embedding them in the reference 
-            decoder code (provided by third party vendors) and 
-            programmed filter C model; Development done on Windows 
-            (MS Visual C++ development environment) and Linux
-   \item Ported all code to Linux and developed C interface 
-            and synchronization mechanism to enable IPC with Specman RTL 
-            simulation tool in order to test Verilog (hardware) code
-   \item Wrote various Perl scripts and created Perl/Tk GUI application 
-            to enable automatic running of the tests, 
-            automatic logging and report creation.
-   \item Defined and implemented (in C) functional coverage and algorithms 
-               to extract minimum set of testing conformance video 
-               bitstreams needed for full coverage
-\end{itemize}
-
-
-   \textbf{GSM/GPRS/EDGE L1 Software Engineer}
-   \smallskip
-
-   \textit{Layer 1 Non-Regression testing and tool development}
-\begin{itemize}
-   \item Provided in depth support during GSM/GPRS/EDGE 
-               Layer1 Real-time embedded software development 
-   \item In charge of MCU and DSP L1 SW non-regression testing 
-            spread over several programs that used several 
-            TI OMAP platforms with ARM 9 / ARM 11 and TI C55x DSP
-   \item Extensive laboratory experience - proficiency with 
-            various modern mobile telephony protocols test 
-            equipment (ANITE, RACAL, CRTU, CMU200, CRTP, etc.)
-   \item Analyzed L1 Trace, troubleshooted L1 sofware in case of issues
-   \item Fully developed GSM Voice “audio loopback” and BER 
-            test cases, implemented complete automation of 
-            GSM Voice test process for RACAL AIME 6103.
-   \item Developed ANITE/Agilent SW applications (in C) for testing 2G/UMA (GAN) handovers
-\end{itemize}
-
-
-%%%% FNX Solutions %%%
-\bigskip
-
-   \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bfseries\textsc{\large{FNX Solutions}} \normalfont\hfill Belgrade, Serbia\\
-      \gray \bfseries{Software Engineer}\\
-      \gray August 2005 - July 2006 (1 year)\\
-   \end{tabularx}
-
-\medskip
-
-   \textit{FNX SIERRA System (system for the management and processing of
-   capital market transactions) development and debugging}
-
-\begin{itemize}
-   \item Worked on system coding in C under Solaris within 
-            the international team, remotely connected 
-            to servers in Philadelphia, USA
-   \item Designed and implemented various business objects 
-            and data transfer objects used within a system for 
-            database connectivity. Implemented a crucial part of 
-            Oracle database port by adapting various libraries 
-            used for application/database communication.
-   \item Thoroughly debugged and resolved issues for risk-management 
-            applications (system, network and GUI) 
-   \item Programmed and designed various database triggers, 
-            table and update scripts, stored procedures, etc., in SQL, 
-            Transact-SQL and PL/SQL, migrating system from Sybase to Oracle
-   \item Fully wrote various Perl and BASH scripts and successfully 
-            implemented automatization of development process
-\end{itemize}
-
-
-%%% Innovational Centre of School of Electrical Engeneering %%%
-\bigskip
-
-   \begin{tabularx}{1.0\linewidth}{X}
-      \gray \bfseries\textsc{\small{Innovational Centre of School of Electrical Engeneering}} \normalfont\hfill Belgrade, Serbia\\
-      \gray \bfseries{Research Assistant}\\
-      \gray August 2004 - August 2005 (1 year 1 month)\\
-   \end{tabularx}
-
-\medskip
-
-   \textit{LINSEC - Linux Security and Protection System, project introducing 
-            Mandatory Access Control (MAC) mechanism into Linux 
-            (as opposed to existing Discretionary Access Control mechanism)}
-\begin{itemize}
-   \item Linux kernel hacking (file system domain access control, socket access control)
-   \item Ported the legacy system on 2.6.x "vanilla" kernel and 
-            resolved various errors due to GCC incompatibility issues
-   \item Developed enhance for user-space tools for controlling the system patch
-\end{itemize}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%
-% OPEN SOURCE PROJECTS
-%%%%%%%%%%%%%%%%%%%%%%%
-\section{OPEN SOURCE PROJECTS}
-GNU and FOSS evangelist, implicated in many open source projects in domains of
-development, maintaining, documentation and support.
-
-\begin{itemize}
-   %% Mainflux %%
-   \item \textbf{Mainflux} (\url{https://github.com/Mainflux/mainflux}) \\
-      \textit{Mainflux IoT Platform}
+  \begin{itemize}
+    \item Obtained grant from internal Nokia internal Venture Capital
+          accelarator to bootstrap new bussiness around Blockchain technology:
       \begin{itemize}
-         \item Project author and main achitect
-		 \item Implemented reference version in Javascript (NodeJS) and Go
-         \item Set-up team of experts and rised community awarnes
-         \item Documented implementation and functionalities
-         \item Presented project on conferences all over the world
+        \item Architectured and implemented (from scratch) IoT data monetization platform based on Hyperledger Fabric blockchain,
+            with internal cryptocurrency Smart Contract and complete security and deployment infrastructure
+        \item Invented and filed a patent on mechanism for temporary data stream access via blockchain-configured decentralized proxy
+        \item Managed a team of 4 developers
+        \item Designed start-up finance and marketing plans and managed relations with investors and various stakeholders
+        \item Led two big international pilot projects for blockchain product with telecom operators from Europe and Middle East
       \end{itemize}
-   %% WeIO %%
-   \item \textbf{WeIO} (\url{http://www.we-io.net}) \\
-      \textit{Project aims at bringing rapid prototyping and "internet of things"
-         platform under FOSS licence for both HW and SW. Homebrew "from the scratch"
-         implementation is employed and encouraged.}
-      \begin{itemize}
-         \item Project co-author and designer
-         \item Communication and co-operation with MicropendousX Open Hardware
-               project on PCB design.
-         \item Electronic components selection and ordering and soldering of
-               the HW development boards using PCB re-flow technique
-         \item Enabled OpenOCD low-level JTAG debugging. Wrote TCL
-               configuration scripts and test for HW sanity checking.
-         \item Compiled and prepared toolchain based on GCC and Binutils and
-               wrote build system as a combination of Bash shell scripts and set of Make files
-         \item Compiled/ported ARM CMSIS low-level libraries and drivers to NXP
-                  LPC1768 (ARM CORTEX-M3) architecture
-         \item Ported NuttX RTOS to WeIO platform
-         \item Ported Liux to WeIO platform and assured Linux BSP
-      \end{itemize}
-   %% OpenOCD %%
-   \item \textbf{OpenOCD} (\url{http://openocd.sourceforge.net/}) \\
-      \textit{The Open On-Chip Debugger (OpenOCD) aims to provide debugging,
-         in-system programming and boundary-scan testing for embedded target
-            devices.}
-      \begin{itemize}
-         \item Added support for ARM946E-S architecture
-         \item Corrected MIPS32 code and added microcodes for cache handling
-         \item Documented MIPS32 implementation and functionalities
-      \end{itemize}
-\end{itemize}
+    \item Implemented (in C++) 5G features for new Nokia projects
+    \item Assured Quallcom deliveries of Linux BSP for multi-standard LTE femto-cells on projects for AT\&T and T-Mobile
+  \end{itemize}
 
+  %%{\color{Gray} \hdashrule{\linewidth}{0.3pt}{4pt}}
 
-%%%%%%%%%%%%%%
-% EDUCATION
-%%%%%%%%%%%%%%
-\section{EDUCATION}
+  \vspace{3mm}
 
-   \textbf{\textsc{Diploma Engineer (equivalent to M.Sc.)}} \\
-   \textsc{School of Electrical Engineering, University of Belgrade} \\
-   \textit{department of Electronics, Telecommunications and Control}
+  %%%%%%
+  %% Devialet
+  %%%%%%
+  {\color{Gray}
+    \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}l}
+      {\color{RubineRed} \textsc{Devialet}} \smallskip & \\
+      \small{\faCalendar} \hspace{0.01\linewidth} March 2013 -- November 2014 & \small{\faMapMarker} \hspace{0.01\linewidth} Paris, France \\
+    \end{tabular*}
 
-   \textbf{Master Thesis in Audiotechnics} : \textit{"Analysis of Methodes And 
-         Applications for Artificial Reverberation"}, department of 
-         Telecommunications, School of Electrical Engeneering, Belgrade, Serbia
+    \smallskip
+    {\color{Black}\textbf{Software Architect}}
+  }
 
-\medskip
-   
-   Student projects:
+  \medskip
 
-\begin{itemize}
-   \item RT application for railroad traffic signaling 
-            and organization written in C++ using API of a custom RT kernel
-   \item Retriggerable timer with 7-seg display 
-            based on PIC16F84 uC written in assembly (MPlab IDE)
-   \item 10-band audio equalizer schematic and 
-            layout implementation in Protel package
-   \item JK flip-flop VLSI layout done in Magic VLSI tool
-\end{itemize}
+  Work on system design and embedded SW architecture
+  of wireless digital audio system based on dual-core
+  ARM Cortex-A9 FPGA with custom hard-RT Xenomai-patched
+	Yocto Linux kernel and dual-band 802.11abgn WiFi connection.
 
+  \vspace{7mm}
 
-%%%%%%%%%%%%%%%%%%%%%%%
-% FOREIGN LANGUAGES
-%%%%%%%%%%%%%%%%%%%%%%%
-\section{FOREIGN LANGUAGES}
-\begin{itemize}
-   \item English (excellent)
-   \item French (good)
-   \item Russian (understanding)
-   \item Serbian (mother tongue)
-\end{itemize}
+  %%%%%%
+  %% Sequans
+  %%%%%%
+  {\color{Gray}
+    \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}l}
+      {\color{RubineRed} \textsc{Sequans Communications}} \smallskip & \\
+      \small{\faCalendar} \hspace{0.01\linewidth} June 2010 -- March 2013 & \small{\faMapMarker} \hspace{0.01\linewidth} Paris, France \\
+    \end{tabular*}
 
+    \smallskip
+    {\color{Black}\textbf{Embedded Platform Engineer}}
+  }
 
-%%%%%%%%%%%%%%%%%%%%%%%
-% PERSONAL INTERESTS
-%%%%%%%%%%%%%%%%%%%%%%%
-\section{PERSONAL INTERESTS}
-\begin{itemize}
-   \item Music playing (guitar) and sound and video production using GNU
-            tools
-   \item Contemporary and fine art photography, analogue and digital 
-   \item Karate (karateka and official member of French Karate Federation)
-   \item Film, literature and philosophy
-\end{itemize}
+  \medskip
 
+  Work on platform enablement, system and device drivers for LTE
+  multi-processor SoCs, based on ARM and MIPS architectures
+  with eCos RTOS (for baseband CPU) and Linux (for application CPU).
+
+  \vspace{7mm}
+
+  %%%%%%
+  %% Elsys
+  %%%%%%
+  {\color{Gray}
+    \begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}l}
+      {\color{RubineRed} \textsc{Elsys Design}} \smallskip & \\
+      \small{\faCalendar} \hspace{0.01\linewidth} June 2006 -- June 2010 & \small{\faMapMarker} \hspace{0.01\linewidth} Paris, France \\
+    \end{tabular*}
+
+    \smallskip
+    {\color{Black}\textbf{Software Engineer}}
+  }
+
+  \medskip
+
+  Consulting work in SW engineering for various clients:
+  \textbf{Philips} (Set-Top Box for \textit{Canal+}),
+  \textbf{Spidcom} (Linux kernel and device drivers for ARM-based PLC SoC) and
+  \textbf{Texas Instruments} (OMAP platform development)
+
+  \medskip
+
+  %%%%%%
+  %% Education
+  %%%%%%
+  \section{Education}
+
+    \textbf{\textsc{Diploma Engineer (equivalent to M.Sc.)}} \\
+    School of Electrical Engineering, University of Belgrade,
+    department of Electronics, Telecommunications and Control
+
+    \medskip
+
+    \textbf{Master Thesis in Audiotechnics} : \textit{"Analysis of Methods And
+         Applications for Artificial Reverberation"}
+
+\end{minipage}\hspace{0.04\linewidth}
+\begin{minipage}[t]{0.45\linewidth}
+
+  \fcolorbox{Lavender}{Lavender}{
+    \begin{minipage}[t]{0.95\linewidth}
+
+      \section{Technical Skills}
+
+      \textbf{IoT} and \textbf{Blockchain} expert with entrepreneurial spirit and over 10 years of professional experience in:
+
+      \bigskip
+
+      \setlength{\arrayrulewidth}{0.5mm}
+      \renewcommand{\tabularxcolumn}[1]{>{\arraybackslash}m{#1}}
+
+      \begin{tabularx}{\linewidth}{m{0.12\linewidth}|X}
+        Arch & Scalable distributed systems,
+            decentralized computing and p2p messaging,
+            edge computing, message buses,
+            microservices, 5G, security, API design,
+            logging \& instrumenting, domain-driven design, cloud-native, twelve-factor apps
+      \end{tabularx}
+
+      \medskip
+
+      \begin{tabularx}{\linewidth}{m{0.12\linewidth}|X}
+        HW & Linux kernel and device drivers, RTOSes, bootloaders,
+          JTAG debugging, communication protocols (WiFi, BLE, 6LoWPAN, LoRaWAN),
+          HW interfaces (I$^2$C, SPI, UART, USB), FPGA \& PCB design
+      \end{tabularx}
+
+      \medskip
+
+      \begin{tabularx}{\linewidth}{m{0.12\linewidth}|X}
+        SW & C/C++, Go, Python, Erlang/OTP, Elixir, NodeJS, Lua, Rust, Bash, Perl, Nim
+      \end{tabularx}
+
+      \medskip
+
+      \begin{tabularx}{\linewidth}{m{0.12\linewidth}|X}
+        DevOps & Docker, Kubernetes, Ansible, CI, Load Balancers, Reverse Proxies
+      \end{tabularx}
+    \end{minipage}
+  }
+
+  \medskip
+
+  \section{Open-Source Projects}
+    GNU and FOSS evangelist, implicated in many open source projects in domains of
+    architecture, development, maintaining, documentation and support.
+
+    \begin{itemize}
+      \item \href{https://www.edgexfoundry.org}{EdgeX Foundry} by Linux Foundation -- maintainer
+      \item \href{https://github.com/Mainflux/mainflux}{Mainflux} IoT Platform -- author and main architect
+      \item \href{http://www.we-io.net}{WeIO} IoT Board -- author and main architect
+    \end{itemize}
+
+  \section{Publications \& IP}
+    \faBook \hspace{1mm} \textsc{Books}
+    \begin{itemize}
+      \item  Ervin Varga, Drasko Draskovic and Dejan Mijic, \href{http://www.oreilly.com/programming/free/scalable-architecture-for-the-internet-of-things.csp}
+        {\textit{"Scalable Architecture for the Internet of Things"}},  O'Reilly Media, 2018.
+    \end{itemize}
+
+    \medskip
+
+    \faFileTextO \hspace{1mm} \textsc{Patents}
+    \begin{itemize}
+      \item Drasko Draskovic and George Saleh, \textit{"Mechanism and Aparatus for Selling Data Streams via Blockchain with Temporary Proxied Access"},
+        PAN 18305283.6, Nokia, 2018.
+    \end{itemize}
+
+    \medskip
+
+    \faTrophy \hspace{1mm} \textsc{Awards}
+    \begin{itemize}
+      \item Innovation Award - \href{https://www.edgexfoundry.org/blog/2018/04/24/happy-1st-anniversary-edgex-foundry}{Linux Foundation's EdgeX Foundry Community Awards 2018}
+      \item Contribution Award - \href{https://www.edgexfoundry.org/blog/2018/04/24/happy-1st-anniversary-edgex-foundry}{Linux Foundation's EdgeX Foundry Community Awards 2018}
+    \end{itemize}
+
+    \medskip
+
+    \faGroup \hspace{1mm} \textsc{Conferences}
+    \begin{itemize}
+      \item Open IoT Summit, \href{http://sched.co/DYM7}{\textit{"Hyperscalable Unified IoT Architecture"}}, Linux Foundation, Portland, USA, 2018
+      \item Software Architecture Conference, \href{https://conferences.oreilly.com/software-architecture/sa-eu-2017/public/schedule/detail/62113}
+        {\textit{"Architecturing and Securing IoT Platforms with Microservices"}}, O'Reilly, London, UK, 2017
+      \item Open Networking Summit, \href{http://sched.co/9x8L}{\textit{"IoT and Networking -- Architecture, Requirements \& Implementation"}}, Linux Foundation, Santa Clara, USA, 2017
+    \end{itemize}
+
+    \section{Communication Skills}
+      \textbf{English} (excellent), \textbf{French} (excellent), \textbf{Russian} (understanding), \textbf{Serbian} (mother tongue)
+
+\end{minipage}
 \end{document}
